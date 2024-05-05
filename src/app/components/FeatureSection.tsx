@@ -12,8 +12,8 @@ export const FeatureSection = () => {
           <h2 className=" font-bold text-xl pb-4">Window Tinting</h2>
           <div className="feature1"></div>
           <p className=" text-center pt-4">
-            Enhance your vehicle's aesthetics and privacy with our premium
-            window tinting service that blocks UV rays and reduces glare.
+            {` Enhance your vehicle's aesthetics and privacy with our premium
+            window tinting service that blocks UV rays and reduces glare.`}
           </p>
         </div>
         <div className=" text-white p-10  max-w-[400px] flex flex-col justify-center items-center gap-2 ">
@@ -21,8 +21,8 @@ export const FeatureSection = () => {
 
           <div className="feature2"></div>
           <p className=" text-center pt-4">
-            Safeguard your car's paint from scratches, dirt, and weathering with
-            our durable paint protection solutions.
+            {`Safeguard your car's paint from scratches, dirt, and weathering with
+            our durable paint protection solutions.`}
           </p>
         </div>
 
@@ -31,8 +31,8 @@ export const FeatureSection = () => {
 
           <div className="feature4"></div>
           <p className=" text-center pt-4">
-            Customize your vehicle's appearance with our high-quality vinyl
-            wraps, available in a variety of colors and finishes.
+            {` Customize your vehicle's appearance with our high-quality vinyl
+            wraps, available in a variety of colors and finishes.`}
           </p>
         </div>
         <div className=" text-white p-10  max-w-[400px] flex flex-col justify-center items-center gap-2">
@@ -40,8 +40,8 @@ export const FeatureSection = () => {
 
           <div className="feature3"></div>
           <p className=" text-center pt-4">
-            Experience rapid service delivery, ensuring your vehicle returns to
-            you swiftly and ready to impress.
+            {`Experience rapid service delivery, ensuring your vehicle returns to
+            you swiftly and ready to impress.`}
           </p>
         </div>
       </div>
