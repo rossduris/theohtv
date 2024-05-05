@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-
+import { Bars3Icon, BeakerIcon } from "@heroicons/react/24/solid";
 const Header = () => {
   return (
     <header className=" bg-white shadow-sm relative overflow-hidden  flex w-full flex-col justify-center">
@@ -29,19 +29,26 @@ const Header = () => {
               width={300}
               height={100}
               alt="logo"
-              style={{ zIndex: 10, position: "relative", paddingLeft: 10 }}
+              style={{
+                zIndex: 10,
+                position: "relative",
+                paddingLeft: 10,
+                width: "auto",
+              }}
+              className=" h-[75px] md:h-[auto]"
             />
           </div>
-          <div className=" md:block lg:block sm:hidden ">
-            <nav className="flex gap-10 z-10  justify-end pr-5 text-white">
-              <Link href="/">Home</Link>
-              <Link href="/services">Services</Link>
-              <Link href="/about-us">About Us</Link>
-              <Link href="/contact-us">Contact Us</Link>
-              {/* <Link href="/gallery">Gallery</Link> */}
-            </nav>
+
+          <div className=" sm:block md:hidden text-white">
+            <Bars3Icon className="size-8 mr-6 text-white" />
           </div>
-          <div className=" sm:block md:hidden text-white">Mobile Nav</div>
+          <nav className="gap-10 z-10  justify-end pr-5 text-white hidden md:flex">
+            <Link href="/">Home</Link>
+            <Link href="/services">Services</Link>
+            <Link href="/about-us">About Us</Link>
+            <Link href="/contact-us">Contact Us</Link>
+            {/* <Link href="/gallery">Gallery</Link> */}
+          </nav>
         </div>
 
         <div className="bg-gradient-to-tr from-black to-transparent h-full w-full absolute"></div>

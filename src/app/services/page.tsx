@@ -4,7 +4,7 @@ import React from "react";
 const Services = () => {
   return (
     <div className="page-details">
-      <h1>Services</h1>
+      <h1>Our Services</h1>
       <div className=" flex flex-col p-20 gap-10 mx-28">
         <span>
           {` At The Ohio Tint & Vinyl Company, we specialize in a variety of

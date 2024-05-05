@@ -4,14 +4,16 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className=" bg-black w-full border-t flex justify-between  bg-gradient-to-t from-black to-[#121212]">
+    <footer className=" bg-black w-full border-t flex justify-between  bg-gradient-to-t from-black to-[#121212] flex-col lg:flex-row">
       <Image
         alt="logo big"
         src="/logo-white.png"
         width={350}
         height={100}
         style={{
+          height: "300px",
           backgroundColor: "transparent",
+          objectFit: "contain",
           width: "auto",
         }}
       />

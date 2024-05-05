@@ -28,7 +28,10 @@ const ContactForm = () => {
   // };
 
   return (
-    <form action={handleSubmit} className="flex flex-col w-[600px] my-10 ">
+    <form
+      action={handleSubmit}
+      className="flex flex-col md:w-[600px] my-10 mx-10"
+    >
       <label className=" pt-5 pb-1">Name</label>
       <span className=" flex gap-6">
         <input
