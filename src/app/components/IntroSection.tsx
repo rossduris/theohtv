@@ -4,12 +4,7 @@ export const IntroSectoin = () => {
   return (
     <section className=" bg-black p-16 text-white">
       <p>
-        {`At The Ohio Tint & Vinyl Company, your premier destination for top-notch
-        vinyl tinting and coating services. Nestled in the heart of Lancaster,
-        Ohio, we pride ourselves on delivering unparalleled quality and expert
-        craftsmanship in every project. Our dedicated team combines
-        state-of-the-art technology with personalized attention to meet your
-        specific needs, ensuring a flawless finish every time.`}
+        {`Welcome to The Ohio Tint & Vinyl Company, your go-to destination for premium vinyl tinting and coating services. Located in the heart of Lancaster, Ohio, we are committed to delivering unmatched quality and expert craftsmanship in every project we undertake. Our team of professionals merges cutting-edge technology with personalized service to cater to your unique requirements, guaranteeing impeccable results with every finish.`}
       </p>
     </section>
   );
