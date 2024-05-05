@@ -30,21 +30,33 @@ const ContactForm = () => {
   return (
     <form action={handleSubmit} className="flex flex-col w-[600px] my-10 ">
       <label className=" pt-5 pb-1">Name</label>
+      <span className=" flex gap-6">
+        <input
+          placeholder="Name"
+          className="text-black  w-full bg-white p-2 rounded-md"
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          name="name"
+          required
+        />
+
+        <input
+          placeholder="Email *"
+          className="text-black  w-full bg-white p-2 rounded-md"
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          name="name"
+          required
+        />
+      </span>
+      <label className=" pt-6 pb-1">Phone Number</label>
       <input
-        placeholder="Name"
-        className="text-black  w-full bg-white p-2 rounded-md"
-        type="text"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        name="name"
-        required
-      />
-      <label className=" pt-6 pb-1">Subject</label>
-      <input
-        placeholder="Subject"
+        placeholder="Phone Number"
         className="rounded-md pt-2 text-black  w-full bg-white p-2"
         type="text"
-        name="subject"
+        name="phone"
         value={subject}
         onChange={(e) => setSubject(e.target.value)}
         required

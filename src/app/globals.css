@@ -76,15 +76,17 @@ footer nav a:hover {
 }
 
 .feature2 {
-  background-position: 28px 10px; /* Position of the first icon in the sprite */
-  background-size: 400px;
+  background-position: 22px 20px; /* Position of the first icon in the sprite */
+  background-size: 440px;
 }
 
 .feature3 {
   background-position: -90px 20px; /* Position of the second icon, assuming each icon is 100px wide */
+  background-size: 440px;
 }
 .feature4 {
-  background-position: -196px 20px; /* Position of the second icon, assuming each icon is 100px wide */
+  background-position: -195px 20px; /* Position of the second icon, assuming each icon is 100px wide */
+  background-size: 440px;
 }
 
 .feature-sec h2 {
@@ -93,4 +95,16 @@ footer nav a:hover {
 .feature-sec p {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.page-details h1 {
+  @apply text-5xl text-center pt-20;
+}
+
+.page-details div h2 {
+  @apply font-bold text-xl py-2;
+}
+
+.page-details {
+  @apply bg-gradient-to-t from-black to-[#121212];
 }

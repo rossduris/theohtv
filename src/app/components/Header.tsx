@@ -9,7 +9,7 @@ const Header = () => {
         src="/bg2.jpg"
         width={850}
         height={100}
-        alt="logo"
+        alt="banner"
         style={{
           width: "100%",
           position: "absolute",
@@ -22,7 +22,7 @@ const Header = () => {
         Header banner 555-555-5555
       </span> */}
       <div className="text-black flex justify-center">
-        <div className="flex z-10 w-full flex-row justify-center items-center ">
+        <div className="flex z-10 w-full flex-row justify-between items-center ">
           <div className="  flex h-full w-[300px] z-20  ">
             <Image
               src="/logo-white-slim.png"
@@ -32,15 +32,16 @@ const Header = () => {
               style={{ zIndex: 10, position: "relative", paddingLeft: 10 }}
             />
           </div>
-          <nav className="flex gap-10 z-10 w-[100%] justify-end pr-5 text-white">
-            <Link className=" underline" href="/">
-              Home
-            </Link>
-            <Link href="/">Services</Link>
-            <Link href="/">About Us</Link>
-            <Link href="/">Contact Us</Link>
-            <Link href="/">Gallery</Link>
-          </nav>
+          <div className=" md:block lg:block sm:hidden ">
+            <nav className="flex gap-10 z-10  justify-end pr-5 text-white">
+              <Link href="/">Home</Link>
+              <Link href="/services">Services</Link>
+              <Link href="/about-us">About Us</Link>
+              <Link href="/contact-us">Contact Us</Link>
+              {/* <Link href="/gallery">Gallery</Link> */}
+            </nav>
+          </div>
+          <div className=" sm:block md:hidden text-white">Mobile Nav</div>
         </div>
 
         <div className="bg-gradient-to-tr from-black to-transparent h-full w-full absolute"></div>

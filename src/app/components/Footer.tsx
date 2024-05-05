@@ -21,9 +21,10 @@ const Footer = () => {
         </span>
         <nav className=" text-white flex flex-col">
           <Link href="/">Home</Link>
-          <Link href="/">About Us</Link>
-          <Link href="/">Contact Us</Link>
-          <Link href="/">Gallery</Link>
+          <Link href="/services">Services</Link>
+          <Link href="/about-us">About Us</Link>
+          <Link href="/contact-us">Contact Us</Link>
+          {/* <Link href="/gallery">Gallery</Link> */}
         </nav>
       </div>
       <div>
@@ -40,11 +41,13 @@ const Footer = () => {
         <span className=" border-b w-[170px] text-gray-300 font-bold my-2 py-2 flex">
           Contact
         </span>
-        <nav className=" text-white flex flex-col">
-          <Link href="/">Home</Link>
-          <Link href="/">About Us</Link>
-          <Link href="/">Contact Us</Link>
-          <Link href="/">Gallery</Link>
+        <nav className=" text-white flex flex-col gap-6">
+          <p>
+            <Link href="tel:(614) 496-7840">(614) 496-7840</Link>
+          </p>
+          <p>
+            2257 W. Fair Ave. <br></br> Lancaster, OH 43130
+          </p>
         </nav>
       </div>
     </footer>
