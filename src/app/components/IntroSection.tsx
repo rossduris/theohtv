@@ -2,13 +2,9 @@ import React from "react";
 
 export const IntroSectoin = () => {
   return (
-    <section className=" bg-black p-16">
-      <p
-        style={{
-          lineHeight: 1.8,
-        }}
-      >
-        {`The Ohio Tint & Vinyl Company, your premier destination for top-notch
+    <section className=" bg-black p-16 text-white">
+      <p>
+        {`At The Ohio Tint & Vinyl Company, your premier destination for top-notch
         vinyl tinting and coating services. Nestled in the heart of Lancaster,
         Ohio, we pride ourselves on delivering unparalleled quality and expert
         craftsmanship in every project. Our dedicated team combines
