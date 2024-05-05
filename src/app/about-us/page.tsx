@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="page-details">
       <h1>About Us</h1>
-      <div className=" flex flex-col p-20 gap-10 mx-28">
+      <div className=" flex flex-col p-20 gap-10 max-w-7xl ">
         <span>
           {`At The Ohio Tint & Vinyl Company, we're passionate about enhancing
           your driving experience through high-quality car and window tinting

@@ -106,5 +106,5 @@ footer nav a:hover {
 }
 
 .page-details {
-  @apply bg-gradient-to-t from-black to-[#121212] text-white;
+  @apply bg-gradient-to-t from-black to-[#121212] text-white flex justify-center items-center flex-col;
 }
