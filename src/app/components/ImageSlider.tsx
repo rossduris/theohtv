@@ -38,18 +38,25 @@ const ImageSlider: React.FC = () => {
   };
 
   useEffect(() => {
-    setTimeout(() => {
+    let timeout: NodeJS.Timeout;
+    const handleSlideChange = () => {
       if (activeSlide === images.length - 1) {
         setActiveSlide(0);
       } else {
         setActiveSlide(activeSlide + 1);
       }
-    }, 3600);
+    };
+    const debounceSlideChange = () => {
+      clearTimeout(timeout);
+      timeout = setTimeout(handleSlideChange, 3600);
+    };
+    timeout = setTimeout(handleSlideChange, 3600);
+    return () => clearTimeout(timeout);
   }, [activeSlide]);
 
   return (
     <div>
-      <div className=" h-[300px] md:h-[450px] lg:h-[650px] z-50 transition-all duration-100">
+      <div className="h-[300px] md:h-[450px] lg:h-[650px] z-50 transition-all duration-100">
         {images.map((image, index) => (
           <div
             key={index}
@@ -71,10 +78,10 @@ const ImageSlider: React.FC = () => {
           </div>
         ))}
       </div>
-      <button className=" absolute z-20 top-[50%]" onClick={prevSlide}>
+      <button className="absolute z-20 top-[50%]" onClick={prevSlide}>
         <ArrowLeftCircleIcon className="size-10 mr-6 text-black" />
       </button>
-      <button className=" absolute  z-20 top-[50%] right-0" onClick={nextSlide}>
+      <button className="absolute z-20 top-[50%] right-0" onClick={nextSlide}>
         <ArrowRightCircleIcon className="size-10 mr-6 text-black" />
       </button>
     </div>
