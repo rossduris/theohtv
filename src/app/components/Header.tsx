@@ -2,9 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { Bars3Icon, BeakerIcon } from "@heroicons/react/24/solid";
+import MobileNav from "./MobileNav";
 const Header = () => {
   return (
-    <header className=" bg-white shadow-sm relative overflow-hidden  flex w-full flex-col justify-center">
+    <header className=" bg-white shadow-sm fixed overflow-hidden  flex w-full flex-col justify-center z-50  ">
       <Image
         src="/bg2.jpg"
         width={850}
@@ -14,7 +15,6 @@ const Header = () => {
           width: "100%",
           position: "absolute",
           overflow: "hidden",
-          zIndex: 0,
         }}
       />
 
@@ -23,25 +23,25 @@ const Header = () => {
       </span> */}
       <div className="text-black flex justify-center">
         <div className="flex z-10 w-full flex-row justify-between items-center ">
-          <div className="  flex h-full w-[300px] z-20  ">
-            <Image
-              src="/logo-white-slim.png"
-              width={300}
-              height={100}
-              alt="logo"
-              style={{
-                zIndex: 10,
-                position: "relative",
-                paddingLeft: 10,
-                width: "auto",
-              }}
-              className=" h-[75px] md:h-[auto]"
-            />
+          <div className="  flex h-full w-[300px] ">
+            <Link href="/">
+              <Image
+                src="/logo-white-slim.png"
+                width={300}
+                height={100}
+                alt="logo"
+                style={{
+                  zIndex: 10,
+                  position: "relative",
+                  paddingLeft: 10,
+                  width: "auto",
+                }}
+                className=" h-[75px] md:h-[auto]"
+              />
+            </Link>
           </div>
 
-          <div className=" sm:block md:hidden text-white">
-            <Bars3Icon className="size-8 mr-6 text-white" />
-          </div>
+          <MobileNav />
           <nav className="gap-10 z-10  justify-end pr-5 text-white hidden md:flex">
             <Link href="/">Home</Link>
             <Link href="/services">Services</Link>

@@ -4,13 +4,13 @@ import { FeatureSection } from "./components/FeatureSection";
 import Footer from "./components/Footer";
 import MapSection from "./components/MapSection";
 import MessageSection from "./components/MessageSection";
-import { IntroSectoin } from "./components/IntroSection";
+import { IntroSection } from "./components/IntroSection";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className=" relative z-0">
       <Hero />
-      <IntroSectoin />
+      <IntroSection />
       <FeatureSection />
       <MapSection />
       <MessageSection />

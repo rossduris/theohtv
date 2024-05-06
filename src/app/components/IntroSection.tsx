@@ -1,6 +1,6 @@
 import React from "react";
 
-export const IntroSectoin = () => {
+export const IntroSection = () => {
   return (
     <section className=" bg-black p-16 text-white">
       <div className="  bg-black  bg-opacity-75  bottom-0 pb-10 w-full">
