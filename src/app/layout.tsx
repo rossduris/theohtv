@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Header />
-        <div className=" relative top-20 z-10">{children}</div>
+        <div className=" relative top-16 z-10">{children}</div>
         <Footer />
       </body>
     </html>
