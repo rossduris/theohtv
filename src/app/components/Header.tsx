@@ -5,8 +5,8 @@ import { Bars3Icon, BeakerIcon } from "@heroicons/react/24/solid";
 import MobileNav from "./MobileNav";
 const Header = () => {
   return (
-    <header className=" bg-white shadow-sm  h-[80px] md:h-[120px]  flex w-full flex-col justify-center z-50">
-      <div className=" overflow-hidden h-[80px] w-full flex absolute">
+    <header className=" bg-black shadow-sm  h-[80px] md:h-[110px]  flex w-full flex-col justify-center z-50">
+      <div className=" overflow-hidden h-[80px] md:h-[110px] w-full flex absolute">
         <Image
           width={800}
           height={100}
@@ -14,7 +14,7 @@ const Header = () => {
           alt="banner"
           style={{
             width: "100%",
-            height: "300px",
+            height: "100%",
             position: "absolute",
             objectFit: "cover",
             overflow: "hidden",
@@ -22,9 +22,6 @@ const Header = () => {
         />
       </div>
 
-      {/* <span className="text-white text-xs p-1 justify-center w-full flex  bg-black z-20 relative">
-        Header banner 555-555-5555
-      </span> */}
       <div className="text-black flex justify-center">
         <div className="flex z-10 w-full flex-row justify-between items-center ">
           <div className="  flex h-full w-[300px] ">
