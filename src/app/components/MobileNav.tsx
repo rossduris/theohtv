@@ -11,7 +11,7 @@ const MobileNav = () => {
   };
 
   return (
-    <div className={` sm:block md:hidden text-white  relative z-50`}>
+    <div className={` sm:block md:hidden text-white  relative`}>
       {isOpen ? (
         <XMarkIcon
           onClick={handleMenuToggle}
@@ -25,7 +25,7 @@ const MobileNav = () => {
       )}
 
       {isOpen ? (
-        <nav className="bg-black  right-0 mt-2 p-5 flex flex-col items-start z-60 gap-3 w-[150px] absolute top-10 z-50">
+        <nav className="bg-black  right-0 mt-2 p-5 flex flex-col items-start z-60 gap-3 w-[150px] absolute top-5 z-auto">
           <Link href="/">Home</Link>
           <Link href="/services">Services</Link>
           <Link href="/about-us">About Us</Link>

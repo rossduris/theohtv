@@ -5,18 +5,22 @@ import { Bars3Icon, BeakerIcon } from "@heroicons/react/24/solid";
 import MobileNav from "./MobileNav";
 const Header = () => {
   return (
-    <header className=" bg-white shadow-sm fixed overflow-hidden  flex w-full flex-col justify-center z-50  ">
-      <Image
-        src="/bg2.jpg"
-        width={850}
-        height={100}
-        alt="banner"
-        style={{
-          width: "100%",
-          position: "absolute",
-          overflow: "hidden",
-        }}
-      />
+    <header className=" bg-white shadow-sm  h-[80px] md:h-[120px]  flex w-full flex-col justify-center z-50">
+      <div className=" overflow-hidden h-[80px] w-full flex absolute">
+        <Image
+          width={800}
+          height={100}
+          src="https://ik.imagekit.io/2e8fvrzss/fiber.png"
+          alt="banner"
+          style={{
+            width: "100%",
+            height: "300px",
+            position: "absolute",
+            objectFit: "cover",
+            overflow: "hidden",
+          }}
+        />
+      </div>
 
       {/* <span className="text-white text-xs p-1 justify-center w-full flex  bg-black z-20 relative">
         Header banner 555-555-5555
@@ -50,8 +54,6 @@ const Header = () => {
             {/* <Link href="/gallery">Gallery</Link> */}
           </nav>
         </div>
-
-        <div className="bg-gradient-to-tr from-black to-transparent h-full w-full absolute"></div>
       </div>
     </header>
   );

@@ -3,7 +3,7 @@ import React from "react";
 
 const MapSection = () => {
   return (
-    <section className="  justify-between  border-t  bg-black flex-col md:flex-row grid grid-cols-1 md:grid-cols-2 text-white">
+    <section className="  justify-between  border-t  bg-black flex-col md:flex-row grid grid-cols-1 md:grid-cols-2 text-white w-full ">
       <div className="flex justify-center items-center w-full flex-col gap-10 py-10">
         <h3 className="text-4xl font-bold">Location</h3>
         <span className=" text-2xl hover:text-blue-200">

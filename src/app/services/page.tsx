@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <div className="page-details">
       <h1>Our Services</h1>
-      <div className=" flex flex-col p-20 gap-10">
+      <div className=" flex flex-col p-20 gap-10 max-w-7xl ">
         <span>
           {` At The Ohio Tint & Vinyl Company, we specialize in a variety of
           high-quality vehicle enhancement and protection services. Our

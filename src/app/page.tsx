@@ -8,7 +8,7 @@ import { IntroSection } from "./components/IntroSection";
 
 export default function Home() {
   return (
-    <main className=" relative z-0">
+    <main className=" flex flex-col  w-full">
       <Hero />
       <IntroSection />
       <FeatureSection />
