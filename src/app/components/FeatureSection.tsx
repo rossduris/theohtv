@@ -47,7 +47,7 @@ export const FeatureSection = () => {
         </div>
       </div>
       <Link href="/services">
-        <button className="border p-4 rounded-full justify-center w-[200px] mb-20 hover:bg-gray-950">
+        <button className="border p-4 rounded-full justify-center w-[200px] mb-20 hover:bg-gray-950 text-white">
           Learn More
         </button>
       </Link>

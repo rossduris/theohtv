@@ -82,12 +82,12 @@ export const sendEmail = async (
   message: string
 ) => {
   const transporter = nodemailer.createTransport({
-    host: "smtp.office365.com",
+    host: "smtp.gmail.com",
     port: 587,
     secure: false, // Use `true` for port 465, `false` for all other ports
     auth: {
-      user: process.env.OFFICE365_SMTP_USER,
-      pass: process.env.OFFICE365_SMTP_PASS,
+      user: process.env.GMAIL_USER,
+      pass: process.env.GMAIL_PASS,
     },
   });
 
@@ -102,7 +102,7 @@ export const sendEmail = async (
   try {
     const info = await transporter.sendMail({
       from: '"The Ohio Tint & Vinyl Company" <chris@theohtv.com>',
-      to: process.env.OFFICE365_SMTP_USER,
+      to: "rossduris@gmail.com",
       replyTo: email,
       subject: `New Inquiry from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
