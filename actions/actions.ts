@@ -101,7 +101,7 @@ export const sendEmail = async (
 
   try {
     const info = await transporter.sendMail({
-      from: '"The Ohio Tint & Vinyl Company" <chris@theohtv.com>',
+      from: '"The Ohio Tint & Vinyl Company" <theohtvcompany@gmail.com>',
       to: "chris@theohtv.com",
       replyTo: email,
       subject: `New Inquiry from ${name}`,

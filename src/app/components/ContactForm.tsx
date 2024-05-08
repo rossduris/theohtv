@@ -19,7 +19,7 @@ const ContactForm = () => {
       setPhone("");
       setMessage("");
       setLoading(false);
-    }, 1000);
+    }, 1500);
   };
 
   return (
