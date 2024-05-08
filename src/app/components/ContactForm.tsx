@@ -1,12 +1,13 @@
 "use client";
 
 import React, { FormEvent, useState } from "react";
-import { handleSubmit } from "../../../actions";
+import { handleSubmit } from "../../../actions/actions";
 import { useFormState } from "react-dom";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
-  const [subject, setSubject] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -14,18 +15,12 @@ const ContactForm = () => {
     setLoading(true);
     setTimeout(() => {
       setName("");
-      setSubject("");
+      setEmail("");
+      setPhone("");
       setMessage("");
       setLoading(false);
     }, 1000);
   };
-  // const handleSubmit = async (e: FormEvent) => {
-  //   e.preventDefault();
-
-  //   try {
-  //     const response = await fetch("/api/contactForm");
-  //   } catch {}
-  // };
 
   return (
     <form
@@ -40,7 +35,7 @@ const ContactForm = () => {
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          name="name"
+          name="Name"
           required
         />
 
@@ -48,9 +43,9 @@ const ContactForm = () => {
           placeholder="Email *"
           className="text-black  w-full bg-white p-2 rounded-md"
           type="text"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          name="name"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          name="Email"
           required
         />
       </span>
@@ -59,16 +54,16 @@ const ContactForm = () => {
         placeholder="Phone Number"
         className="rounded-md pt-2 text-black  w-full bg-white p-2"
         type="text"
-        name="phone"
-        value={subject}
-        onChange={(e) => setSubject(e.target.value)}
+        name="Phone"
+        value={phone}
+        onChange={(e) => setPhone(e.target.value)}
         required
       />
       <label className=" pt-6 pb-1">Message</label>
       <textarea
         placeholder="Message"
         className=" rounded-md pt-2 text-black w-full bg-white p-2 h-24"
-        name="message"
+        name="Message"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
         required
