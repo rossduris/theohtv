@@ -17,9 +17,9 @@ const Footer = () => {
           width: "auto",
         }}
       />
-      <div className=" p-10">
+      <div className=" p-10 flex flex-wrap">
         <div>
-          <span className=" border-b w-[170px] text-gray-300 font-bold my-4 py-2 flex">
+          <span className=" border-b w-[190px] mr-10 text-gray-300 font-bold my-4 py-2 flex">
             Site Links
           </span>
           <nav className=" text-white flex flex-col">
@@ -27,11 +27,10 @@ const Footer = () => {
             <Link href="/services">Services</Link>
             <Link href="/about-us">About Us</Link>
             <Link href="/contact-us">Contact Us</Link>
-            {/* <Link href="/gallery">Gallery</Link> */}
           </nav>
         </div>
         <div>
-          <span className=" border-b w-[170px] text-gray-300 font-bold my-4 py-2 flex">
+          <span className=" border-b w-[190px] mr-10 text-gray-300 font-bold my-4 py-2 flex">
             Social
           </span>
           <nav className=" text-white flex flex-col">
@@ -41,7 +40,7 @@ const Footer = () => {
           </nav>
         </div>
         <div>
-          <span className=" border-b w-[170px] text-gray-300 font-bold my-4 py-2 flex">
+          <span className=" border-b w-[190px] mr-10 text-gray-300 font-bold my-4 py-2 flex">
             Contact
           </span>
           <nav className=" text-white flex flex-col gap-6">

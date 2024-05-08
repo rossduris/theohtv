@@ -92,7 +92,7 @@ export const sendEmail = async (
   });
 
   const emailBody = `
-    <h1>New Inquiry from Website</h1>
+    <h1>New Inquiry from ${name}</h1>
     <p><strong>Name:</strong> ${name}</p>
     <p><strong>Email:</strong> ${email}</p>
     <p><strong>Phone:</strong> ${phone}</p>
@@ -102,7 +102,7 @@ export const sendEmail = async (
   try {
     const info = await transporter.sendMail({
       from: '"The Ohio Tint & Vinyl Company" <chris@theohtv.com>',
-      to: "rossduris@gmail.com",
+      to: "chris@theohtv.com",
       replyTo: email,
       subject: `New Inquiry from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
