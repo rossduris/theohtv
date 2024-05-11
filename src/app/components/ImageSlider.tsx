@@ -163,10 +163,10 @@ const ImageSlider: React.FC = () => {
           </div>
         ))}
       </div>
-      <button className="absolute z-20 top-[50%]" onClick={prevSlide}>
+      <button className="absolute z-0 top-[50%]" onClick={prevSlide}>
         <ArrowLeftCircleIcon className="size-10 mr-6 text-white opacity-60 " />
       </button>
-      <button className="absolute z-20 top-[50%] right-0" onClick={nextSlide}>
+      <button className="absolute z-0 top-[50%] right-0" onClick={nextSlide}>
         <ArrowRightCircleIcon className="size-10 ml-6 text-white opacity-60 " />
       </button>
 

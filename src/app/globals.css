@@ -32,6 +32,12 @@ body {
   }
 }
 
+header {
+  z-index: 9999;
+}
+nav {
+  z-index: 9999;
+}
 .shiny-gradient {
   background: rgb(255, 255, 255);
   background: linear-gradient(

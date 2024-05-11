@@ -43,7 +43,7 @@ const Header = () => {
           </div>
 
           <MobileNav />
-          <nav className="gap-10 z-10  justify-end pr-5 text-white hidden md:flex">
+          <nav className="gap-10 z-100  justify-end pr-5 text-white hidden md:flex">
             <Link href="/">Home</Link>
             <Link href="/services">Services</Link>
             <Link href="/about-us">About Us</Link>
