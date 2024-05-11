@@ -64,7 +64,7 @@ footer nav a:hover {
 .feature4 {
   background-color: white;
   border-radius: 50%;
-  background-image: url("/feature-icons.png");
+  background-image: url("https://ik.imagekit.io/2e8fvrzss/feature-icons.png");
   background-repeat: no-repeat;
   background-size: 300px;
   width: 120px; /* width of each icon */
@@ -107,4 +107,29 @@ footer nav a:hover {
 
 .page-details {
   @apply bg-gradient-to-t from-black to-[#121212] text-white flex justify-center items-center flex-col;
+}
+
+.galleryImageWrapper img {
+  @apply rounded-md max-h-48 object-cover;
+}
+
+.galleryImageWrapper:hover {
+  @apply transform scale-105 cursor-pointer;
+}
+
+.galleryImageWrapper {
+  @apply transition-transform duration-300 ease-in-out w-96 flex justify-center;
+}
+
+.image-fade {
+  animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

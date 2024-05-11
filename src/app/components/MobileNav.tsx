@@ -26,10 +26,21 @@ const MobileNav = () => {
 
       {isOpen ? (
         <nav className="bg-black  right-0 mt-2 p-5 flex flex-col items-start z-60 gap-3 w-[150px] absolute top-5 z-auto">
-          <Link href="/">Home</Link>
-          <Link href="/services">Services</Link>
-          <Link href="/about-us">About Us</Link>
-          <Link href="/contact-us">Contact Us</Link>
+          <Link href="/">
+            <span onClick={() => setIsOpen(false)}>Home</span>
+          </Link>
+          <Link href="/services">
+            <span onClick={() => setIsOpen(false)}>Services</span>
+          </Link>
+          <Link href="/about-us">
+            <span onClick={() => setIsOpen(false)}> About Us</span>
+          </Link>
+          <Link href="/contact-us">
+            <span onClick={() => setIsOpen(false)}> Contact Us</span>
+          </Link>
+          <Link href="/gallery">
+            <span onClick={() => setIsOpen(false)}> Gallery</span>
+          </Link>
         </nav>
       ) : null}
     </div>

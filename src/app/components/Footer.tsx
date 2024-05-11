@@ -5,18 +5,20 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className=" bg-black w-full border-t flex justify-between  bg-gradient-to-t from-black to-[#121212] flex-col lg:flex-row">
-      <Image
-        alt="logo big"
-        src="/logo-white.png"
-        width={350}
-        height={100}
-        style={{
-          height: "300px",
-          backgroundColor: "transparent",
-          objectFit: "contain",
-          width: "auto",
-        }}
-      />
+      <Link href="/">
+        <Image
+          alt="logo big"
+          src="https://ik.imagekit.io/2e8fvrzss/logo-white.png"
+          width={350}
+          height={100}
+          style={{
+            height: "300px",
+            backgroundColor: "transparent",
+            objectFit: "contain",
+            width: "auto",
+          }}
+        />
+      </Link>
       <div className=" p-10 flex flex-wrap">
         <div>
           <span className=" border-b w-[190px] mr-10 text-gray-300 font-bold my-4 py-2 flex">
@@ -27,6 +29,7 @@ const Footer = () => {
             <Link href="/services">Services</Link>
             <Link href="/about-us">About Us</Link>
             <Link href="/contact-us">Contact Us</Link>
+            <Link href="/gallery">Gallery</Link>
           </nav>
         </div>
         <div>
@@ -34,9 +37,20 @@ const Footer = () => {
             Social
           </span>
           <nav className=" text-white flex flex-col">
-            <Link href="/">Facebook</Link>
-            <Link href="/">Instgram</Link>
-            <Link href="/">X</Link>
+            <Link
+              href="https://www.facebook.com/TheOhioTintAndVinylCompany/"
+              passHref
+              target="_blank"
+            >
+              Facebook
+            </Link>
+            <Link
+              href="https://www.instagram.com/theohiotintandvinylcompany/"
+              passHref
+              target="_blank"
+            >
+              Instgram
+            </Link>
           </nav>
         </div>
         <div>

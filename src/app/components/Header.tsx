@@ -27,7 +27,7 @@ const Header = () => {
           <div className="  flex h-full w-[300px] ">
             <Link href="/">
               <Image
-                src="/logo-white-slim.png"
+                src="https://ik.imagekit.io/2e8fvrzss/logo-white-slim.png"
                 width={300}
                 height={100}
                 alt="logo"
@@ -48,7 +48,7 @@ const Header = () => {
             <Link href="/services">Services</Link>
             <Link href="/about-us">About Us</Link>
             <Link href="/contact-us">Contact Us</Link>
-            {/* <Link href="/gallery">Gallery</Link> */}
+            <Link href="/gallery">Gallery</Link>
           </nav>
         </div>
       </div>
