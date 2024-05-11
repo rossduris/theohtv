@@ -173,7 +173,7 @@ const ImageSlider: React.FC = () => {
       <div className="absolute left-1/2 -translate-x-1/2 bottom-0 z-20 flex gap-4 p-4">
         <Link href="/gallery">
           <button
-            className=" z-20  bg-black p-3 rounded-lg opacity-85 text-sm md:text-lg w-[120px] md:w-[160px] hover:opacity-100"
+            className=" z-20  bg-black  text-white p-3 rounded-lg opacity-85 text-sm md:text-lg w-[120px] md:w-[160px] hover:opacity-100"
             onClick={nextSlide}
           >
             View Gallery
@@ -181,7 +181,7 @@ const ImageSlider: React.FC = () => {
         </Link>
         <Link href="/contact-us">
           <button
-            className=" z-20  bg-black p-3 rounded-lg opacity-85 text-sm md:text-lg w-[120px] md:w-[160px] hover:opacity-100"
+            className=" z-20  bg-black text-white p-3 rounded-lg opacity-85 text-sm md:text-lg w-[120px] md:w-[160px] hover:opacity-100"
             onClick={nextSlide}
           >
             Contact Us
