@@ -15,7 +15,7 @@ const Contact = () => {
       </span>
       <MapSection />
       <section className=" w-full bg-black flex justify-center bg-transparent flex-col items-center py-20">
-        <h3 className="text-4xl font-bold">Book Appointment</h3>
+        <h3 className="text-4xl font-bold">Send a Message</h3>
         <ContactForm />
       </section>
     </div>
