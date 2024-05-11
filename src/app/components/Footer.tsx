@@ -49,7 +49,7 @@ const Footer = () => {
               passHref
               target="_blank"
             >
-              Instgram
+              Instagram
             </Link>
           </nav>
         </div>
