@@ -6,7 +6,7 @@ const ServicesSection = () => {
   return (
     <section className=" bg-gradient-to-bl from-black to-[#121212] flex flex-col justify-center items-center">
       <h3 className="racer title py-28" id="services">
-        Services
+        Our Services
       </h3>
 
       <div className=" grid grid-cols-1 sm:grid-cols-2">
