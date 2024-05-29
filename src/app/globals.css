@@ -139,3 +139,79 @@ footer nav a:hover {
     opacity: 1;
   }
 }
+
+.floatnav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.static {
+  /* position: static; */
+  transition: all 0.3s ease;
+
+  height: 100px;
+  z-index: 10000;
+}
+
+.shrink {
+  height: 50px; /* Adjust the height as needed */
+  background-color: #333; /* Example of background color change */
+}
+
+@font-face {
+  font-family: "racer";
+  src: url("/fonts/edgeracer.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.racer {
+  font-family: "racer", sans-serif;
+  color: grad;
+  background: linear-gradient(to top, #3e3e3e 1%, #f2f2f2 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title {
+  font-size: 60px;
+}
+
+.gradient-text {
+}
+
+.car-companies {
+  display: flex;
+  width: 100%;
+  background: linear-gradient(from top, #000, #2f2f2f);
+  justify-content: space-around;
+  border-bottom: 1px solid gray;
+  padding: 0 0 20px;
+  transition: all 0.5s ease;
+}
+
+.car-companies div {
+  background: url("/local/car-companies.png") no-repeat;
+  width: 100px;
+  height: 100px;
+  background-size: 450px;
+  height: 100px;
+  top: 0;
+}
+
+.car-companies .tesla {
+  background-position: -100px 20px;
+}
+.car-companies .dodge {
+  background-position: -362px 20px;
+}
+.car-companies .lexus {
+  background-position: -100px -95px;
+}
+
+.car-companies .subaru {
+  background-position: -360px -95px;
+}
