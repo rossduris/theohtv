@@ -14,7 +14,7 @@ const CarCompanies = () => {
 
   return (
     <section className="relative overflow-hidden">
-      <h2 className="text-center m-4">Brands We've Protected</h2>
+      <h2 className="text-center m-4">Brands </h2>
       <div
         className="car-companies"
         style={{
