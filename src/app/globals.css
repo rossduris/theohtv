@@ -215,3 +215,37 @@ footer nav a:hover {
 .car-companies .subaru {
   background-position: -360px -95px;
 }
+
+.car-wrapper {
+  position: absolute;
+  width: 100%;
+  z-index: 10000;
+  height: 300px;
+  overflow: hidden;
+  background: url("/cars.svg") no-repeat;
+  background-size: 100%;
+  bottom: -100px;
+  opacity: 1;
+  right: 400px;
+  animation: fade-in;
+}
+
+.shrunk-header header {
+  height: 50px;
+  transition: all 0.5s ease;
+}
+
+.header-logo {
+  background: url("https://ik.imagekit.io/2e8fvrzss/logo-white-slim.png")
+    no-repeat;
+  width: 300px;
+  height: 200px;
+  background-size: 100%;
+  background-position: 10px;
+}
+
+.shrunk-header .header-logo {
+  width: 150px;
+  height: 75px;
+  transition: all 0.5s ease;
+}

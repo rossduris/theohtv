@@ -3,28 +3,30 @@ import React from "react";
 
 const VideoSection = () => {
   return (
-    <section className=" relative overflow-hidden max-h-[800px] flex items-center border-t border-black border-b w-full">
-      <div className=" absolute flex justify-center items-center text-white top-0 w-full h-full z-10 flex-col">
-        <h1 className=" font-bold text-4xl">The Ohio Tint & Vinyl Co.</h1>
+    <section className="relative min-h-screen flex items-center border-t border-black border-b w-full h-full">
+      <div className="absolute flex justify-center items-center text-white top-0 w-full h-full z-10 flex-col">
+        <h1 className="font-bold text-8xl max-w-[400px] my-20">
+          NEXT-LEVEL PAINT PROTECTION
+        </h1>
 
-        <div className="flex gap-10 mt-20">
-          <button className=" bg-black py-4 px-10 rounded-full opacity-80">
-            (614) 496-7840
+        <Link href="#services">
+          <button className="bg-white text-black border border-black py-4 px-10 rounded-md  text-2xl hover:bg-gray-200 transition-all duration-100">
+            Get A Quote
           </button>
-          <Link href="#services">
-            <button className=" bg-black py-4 px-10 rounded-full opacity-80">
-              Send a Message
-            </button>
-          </Link>
-        </div>
+        </Link>
       </div>
-      <div
-        style={{
-          opacity: 0.3,
-          width: "100%",
-        }}
-      >
-        <video width="100%" height="315" autoPlay muted loop>
+      <div className=" min-h-screen flex object-contain w-full">
+        <video
+          style={{
+            objectFit: "cover",
+            opacity: 0.4,
+          }}
+          width="100%"
+          height="100%"
+          autoPlay
+          muted
+          loop
+        >
           <source src="/local/carvideo.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
