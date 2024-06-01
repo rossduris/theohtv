@@ -14,7 +14,7 @@ const VideoSection = () => {
   ]);
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setSliderIndex((prevIndex) => (prevIndex + 1) % sliderText.length);
+      setSliderIndex((prevIndex) => (prevIndex + 1) % 3);
     }, 4000);
 
     return () => clearInterval(intervalId); // Clean up the interval on component unmount

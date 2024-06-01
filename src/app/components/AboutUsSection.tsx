@@ -32,7 +32,7 @@ const AboutUsSection = () => {
             <li className=" relative">
               <Link href="https://g.co/kgs/ERsKZsB" passHref target="_blank">
                 <div className="font-serif text-5xl absolute -left-6 opacity-40 top-9">
-                  "
+                  {`"`}
                 </div>
                 <span className="  py-2 pt-10">{`David Krupovlyanskaya`}</span>
                 <blockquote className=" py-4  rounded-lg italic">
