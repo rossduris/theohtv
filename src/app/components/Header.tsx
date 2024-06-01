@@ -26,8 +26,8 @@ const Header = () => {
   }, []);
 
   return (
-    <div className={isShrunk ? "shrunk-header" : ""}>
-      <header className=" bg-black shadow-sm  h-[80px] md:h-[100px]  flex w-full flex-col justify-center z-50 bg-opacity-80 fixed">
+    <div className={isShrunk ? "shrunk-header " : ""}>
+      <header className="   h-[80px] md:h-[100px]  flex w-full flex-col justify-center z-50  fixed">
         <div className="text-black flex justify-center">
           <div className="flex z-10 w-full flex-row justify-between items-center ">
             <div className="  flex h-full w-[300px] ">
@@ -39,10 +39,10 @@ const Header = () => {
             <MobileNav />
             <nav className="gap-10 z-100  justify-end pr-5 text-white hidden md:flex">
               <Link href="/">Home</Link>
-              <Link href="/services">Services</Link>
-              <Link href="/about-us">About Us</Link>
-              <Link href="/contact-us">Contact Us</Link>
-              <Link href="/gallery">Gallery</Link>
+              <Link href="/#about-us">About Us</Link>
+              <Link href="/#services">Services</Link>
+              <Link href="/#gallery">Gallery</Link>
+              <Link href="/#contact-us">Contact Us</Link>
             </nav>
           </div>
         </div>

@@ -133,15 +133,15 @@ const ImageSlider: React.FC = () => {
     };
     const debounceSlideChange = () => {
       clearTimeout(timeout);
-      timeout = setTimeout(handleSlideChange, 4200);
+      timeout = setTimeout(handleSlideChange, 3600);
     };
-    timeout = setTimeout(handleSlideChange, 4200);
+    timeout = setTimeout(handleSlideChange, 3600);
     return () => clearTimeout(timeout);
   }, [activeSlide]);
 
   return (
     <div>
-      <div className="h-[300px] md:h-[450px] lg:h-[650px] z-50 transition-all duration-100">
+      <div className=" h-screen z-50 transition-all duration-100 ">
         {images.map((image, index) => (
           <div
             key={index}
@@ -154,20 +154,15 @@ const ImageSlider: React.FC = () => {
               objectFit: "cover",
             }}
           >
-            <Image
-              src={image.src}
-              alt={image.alt}
-              layout="fill"
-              objectFit="cover"
-            />
+            <Image src={image.src} alt={image.alt} fill objectFit="cover" />
           </div>
         ))}
       </div>
-      <button className="absolute z-0 top-[50%]" onClick={prevSlide}>
-        <ArrowLeftCircleIcon className="size-10 mr-6 text-white opacity-60 " />
+      <button className="absolute z-10 top-[50%] left-0" onClick={prevSlide}>
+        <ArrowLeftCircleIcon className="size-20 mr-6 text-white opacity-60 " />
       </button>
-      <button className="absolute z-0 top-[50%] right-0" onClick={nextSlide}>
-        <ArrowRightCircleIcon className="size-10 ml-6 text-white opacity-60 " />
+      <button className="absolute z-10 top-[50%] right-0" onClick={nextSlide}>
+        <ArrowRightCircleIcon className="size-20 ml-6 text-white opacity-60 " />
       </button>
 
       <div className="absolute left-1/2 -translate-x-1/2 bottom-0 z-20 flex gap-4 p-4">
@@ -176,7 +171,7 @@ const ImageSlider: React.FC = () => {
             className=" z-20  bg-black  text-white p-5 rounded-full opacity-85 text-sm md:text-lg  hover:opacity-100"
             onClick={nextSlide}
           >
-            View The Gallery
+            Browse The Gallery
           </button>
         </Link>
       </div>

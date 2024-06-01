@@ -14,7 +14,6 @@ const CarCompanies = () => {
 
   return (
     <section className="relative overflow-hidden">
-      <h2 className="text-center m-4">Brands </h2>
       <div
         className="car-companies"
         style={{

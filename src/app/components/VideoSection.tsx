@@ -5,13 +5,13 @@ const VideoSection = () => {
   return (
     <section className="relative min-h-screen flex items-center border-t border-black border-b w-full h-full">
       <div className="absolute flex justify-center items-center text-white top-0 w-full h-full z-10 flex-col">
-        <h1 className="font-bold text-8xl max-w-[400px] my-20">
-          NEXT-LEVEL PAINT PROTECTION
+        <h1 className="font-bold md:text-8xl max-w-[400px] my-20 w-[300px] text-6xl -ml-20 sm:ml-0 sm:w-[500px]">
+          EXPERT-LEVEL WINDOW TINTING
         </h1>
 
         <Link href="#services">
-          <button className="bg-white text-black border border-black py-4 px-10 rounded-md  text-2xl hover:bg-gray-200 transition-all duration-100">
-            Get A Quote
+          <button className="bg-black text-white font-bold border border-white py-4 px-10 rounded-md  text-2xl hover:bg-[#181818] transition-all duration-100">
+            Get A Free Quote
           </button>
         </Link>
       </div>

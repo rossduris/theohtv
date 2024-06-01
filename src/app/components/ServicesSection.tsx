@@ -4,10 +4,11 @@ import React from "react";
 
 const ServicesSection = () => {
   return (
-    <section className=" bg-gradient-to-bl from-black to-[#121212] flex flex-col justify-center items-center">
-      <h3 className="racer title py-28" id="services">
-        Our Services
-      </h3>
+    <section
+      id="services"
+      className=" bg-gradient-to-bl from-black to-[#121212] flex flex-col justify-center items-center"
+    >
+      <h3 className="text-7xl font-bold py-28">Our Services</h3>
 
       <div className=" grid grid-cols-1 sm:grid-cols-2">
         <div className=" text-white p-10  flex flex-col justify-center items-center gap-2  w-full">

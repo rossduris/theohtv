@@ -5,14 +5,15 @@ import ImageSlider from "./ImageSlider";
 
 const GallerySection = () => {
   return (
-    <>
-      <h2 className=" z-40 racer title gradient-text text-center py-20">
-        Photo Gallery
+    <section
+      id="gallery"
+      className="flex w-full   overflow-hidden relative bg-black "
+    >
+      <h2 className=" z-10 text-7xl font-bold gradient-text text-center py-20 w-full">
+        Client Gallery
       </h2>
-      <div className="flex w-full   overflow-hidden relative bg-black ">
-        <ImageSlider />
-      </div>
-    </>
+      <ImageSlider />
+    </section>
   );
 };
 

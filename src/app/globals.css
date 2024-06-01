@@ -188,7 +188,6 @@ footer nav a:hover {
   width: 100%;
   background: linear-gradient(from top, #000, #2f2f2f);
   justify-content: space-around;
-  border-bottom: 1px solid gray;
   padding: 0 0 20px;
   transition: all 0.5s ease;
 }
@@ -229,10 +228,14 @@ footer nav a:hover {
   right: 400px;
   animation: fade-in;
 }
+header {
+  transition: all 0.5s ease;
+}
 
 .shrunk-header header {
-  height: 50px;
+  height: 60px;
   transition: all 0.5s ease;
+  background-color: black;
 }
 
 .header-logo {
@@ -242,10 +245,32 @@ footer nav a:hover {
   height: 200px;
   background-size: 100%;
   background-position: 10px;
+  transition: all 0.5s ease;
 }
 
 .shrunk-header .header-logo {
-  width: 150px;
-  height: 75px;
+  width: 180px;
+  height: 80px;
   transition: all 0.5s ease;
+}
+
+.car-bg {
+  background: url("https://ik.imagekit.io/2e8fvrzss/carbg.png?updatedAt=1717076834371")
+    no-repeat;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  object-fit: cover;
+  z-index: -10;
+  background-size: 230%;
+  background-position: -500px 100px;
+  opacity: 0.7;
+}
+
+.reviews {
+  padding: 10px;
+}
+.reviews span {
+  font-weight: bold;
 }
