@@ -139,3 +139,170 @@ footer nav a:hover {
     opacity: 1;
   }
 }
+
+.floatnav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.static {
+  /* position: static; */
+  transition: all 0.3s ease;
+
+  height: 100px;
+  z-index: 10000;
+}
+
+.shrink {
+  height: 50px; /* Adjust the height as needed */
+  background-color: #333; /* Example of background color change */
+}
+
+@font-face {
+  font-family: "racer";
+  src: url("/fonts/edgeracer.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.racer {
+  font-family: "racer", sans-serif;
+  color: grad;
+  background: linear-gradient(to top, #3e3e3e 1%, #f2f2f2 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title {
+  font-size: 60px;
+}
+
+.gradient-text {
+}
+
+.car-companies {
+  display: flex;
+  width: 100%;
+  background: linear-gradient(from top, #000, #2f2f2f);
+  justify-content: space-around;
+  padding: 0 0 20px;
+  transition: all 0.5s ease;
+}
+
+.car-companies div {
+  background: url("/local/car-companies.png") no-repeat;
+  width: 100px;
+  height: 100px;
+  background-size: 450px;
+  height: 100px;
+  top: 0;
+}
+
+.car-companies .tesla {
+  background-position: -100px 20px;
+}
+.car-companies .dodge {
+  background-position: -362px 20px;
+}
+.car-companies .lexus {
+  background-position: -100px -95px;
+}
+
+.car-companies .subaru {
+  background-position: -360px -95px;
+}
+
+.car-wrapper {
+  position: absolute;
+  width: 100%;
+  z-index: 10000;
+  height: 300px;
+  overflow: hidden;
+  background: url("/cars.svg") no-repeat;
+  background-size: 100%;
+  bottom: -100px;
+  opacity: 1;
+  right: 400px;
+  animation: fade-in;
+}
+header {
+  transition: all 0.5s ease;
+}
+
+.shrunk-header header {
+  height: 60px;
+  transition: all 0.5s ease;
+  background-color: black;
+}
+
+.header-logo {
+  background: url("https://ik.imagekit.io/2e8fvrzss/logo-white-slim.png")
+    no-repeat;
+  width: 300px;
+  height: 200px;
+  background-size: 100%;
+  background-position: 10px;
+  transition: all 0.5s ease;
+}
+
+.shrunk-header .header-logo {
+  width: 180px;
+  height: 80px;
+  transition: all 0.5s ease;
+}
+
+.car-bg {
+  background: url("https://ik.imagekit.io/2e8fvrzss/carbg.png?updatedAt=1717076834371")
+    no-repeat;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  object-fit: cover;
+  z-index: -10;
+  background-size: 230%;
+  background-position: -500px 100px;
+  opacity: 0.7;
+}
+
+.reviews {
+  padding: 10px;
+}
+.reviews span {
+  font-weight: bold;
+}
+.slider-text {
+  animation: slide-fade 0.5s ease forwards;
+}
+
+@keyframes slide-fade {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 100;
+  }
+}
+
+.slider-tabs {
+  color: rgb(118, 118, 118);
+  opacity: 0.9;
+}
+.slider-tabs span:hover {
+  background-color: white;
+}
+.slider-tabs span {
+  cursor: pointer;
+  width: 60px;
+  height: 5px;
+
+  background-color: rgb(118, 118, 118);
+}
+.slider-tabs .active-tab {
+  background: rgb(255, 255, 255);
+}

@@ -25,17 +25,7 @@ const Services = () => {
             complements your vehicle.`}
           </p>
         </div>
-        <div>
-          <h2>Paint Protection </h2>
-          <p>
-            {` Our paint protection services are designed to preserve the pristine
-            condition of your vehicle's exterior. Using advanced technology and
-            premium materials, we apply a durable, invisible layer that guards
-            against scratches, chips, and environmental damages. This protective
-            coating ensures your paint remains vibrant and new, maintaining the
-            vehicle's value and appeal.`}
-          </p>
-        </div>
+
         <div>
           <h2>Protection Film Application </h2>
           <p>

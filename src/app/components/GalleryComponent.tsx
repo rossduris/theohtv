@@ -56,6 +56,8 @@ const GalleryComponent = ({ images }: { images: ImagekitImage[] }) => {
 
   return (
     <div className="flex flex-wrap gap-4 w-full justify-center p-6 select-none items-center ">
+      <h2 className=" racer title">Gallery</h2>
+
       {images.map((image, index) => {
         return (
           <div

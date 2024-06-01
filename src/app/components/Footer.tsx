@@ -19,7 +19,7 @@ const Footer = () => {
           }}
         />
       </Link>
-      <div className=" p-10 flex flex-wrap">
+      <div className=" flex flex-wrap">
         <div>
           <span className=" border-b w-[190px] mr-10 text-gray-300 font-bold my-4 py-2 flex">
             Site Links

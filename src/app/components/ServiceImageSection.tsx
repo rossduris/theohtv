@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-export const FeatureSection = () => {
+export const ServiceImageSection = () => {
   return (
     <div className=" bg-gradient-to-bl from-black to-[#121212] flex flex-col justify-center items-center">
       <h3 className="text-white flex w-full justify-center items-center pt-20  text-4xl font-bold">
@@ -10,7 +10,7 @@ export const FeatureSection = () => {
 
       <div className=" bg-transparent text-black w-full  justify-center py-10 items-center grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
         <div className=" text-white p-10  flex flex-col justify-center items-center gap-2  w-full">
-          <h2 className=" font-bold text-xl pb-4">Window Tinting</h2>
+          <h2>Window Tinting</h2>
           <div className="feature1"></div>
           <p className=" text-center px-16 py-4 h-[200px]">
             {` Enhance your vehicle's aesthetics and privacy with our premium
