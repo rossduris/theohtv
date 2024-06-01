@@ -274,3 +274,35 @@ header {
 .reviews span {
   font-weight: bold;
 }
+.slider-text {
+  animation: slide-fade 0.5s ease forwards;
+}
+
+@keyframes slide-fade {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 100;
+  }
+}
+
+.slider-tabs {
+  color: rgb(118, 118, 118);
+  opacity: 0.9;
+}
+.slider-tabs span:hover {
+  background-color: white;
+}
+.slider-tabs span {
+  cursor: pointer;
+  width: 60px;
+  height: 5px;
+
+  background-color: rgb(118, 118, 118);
+}
+.slider-tabs .active-tab {
+  background: rgb(255, 255, 255);
+}
