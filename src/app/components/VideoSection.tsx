@@ -22,25 +22,27 @@ const VideoSection = () => {
 
   return (
     <>
-      <div className=" min-h-screen flex object-contain w-full ">
-        <video
-          style={{
-            objectFit: "cover",
-            opacity: 0.4,
-          }}
-          width="100%"
-          height="100%"
-          autoPlay
-          muted
-          loop
-          className=" z-0"
-        >
-          <source
-            src="https://theohtv.s3.amazonaws.com/carvideo.mp4"
-            type="video/mp4"
-          />
-          {`Your browser does not support the video tag.`}
-        </video>
+      <div className=" min-h-screen flex object-contain w-full select-none">
+        <div className=" absolute flex w-full   bg-transparent top-0 h-screen z-40">
+          <video
+            style={{
+              objectFit: "cover",
+              opacity: 0.4,
+            }}
+            width="100%"
+            height="100%"
+            autoPlay
+            muted
+            loop
+            className=" z-0"
+          >
+            <source
+              src="https://theohtv.s3.amazonaws.com/carvideo.mp4"
+              type="video/mp4"
+            />
+            {`Your browser does not support the video tag.`}
+          </video>
+        </div>
       </div>
       <section className="absolute top-0 min-h-screen flex border-t border-black border-b w-full h-full justify-center items-center">
         <div>
