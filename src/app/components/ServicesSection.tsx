@@ -13,10 +13,8 @@ const ServicesSection = () => {
 
       <div className=" relative w-full">
         <div className="grid grid-cols-1 sm:grid-cols-2 relative">
-          <div className=" text-white p-10  flex flex-col justify-center sm:items-start items-center sm:pl-20 gap-10  w-full    absolute top-[50%] -translate-y-1/2  sm:relative">
-            <h2 className="font-bold text-6xl pb-4 bg-black bg-opacity-40 p-2">
-              Window Tinting
-            </h2>
+          <div className=" text-white p-10  flex flex-col justify-center sm:items-start z-10 items-center md:pl-36 gap-10  w-full    absolute top-[50%] -translate-y-1/2  sm:relative">
+            <h2 className="font-bold text-6xl pb-4  ">Window Tinting</h2>
             <span className="text-xl text-center bg-slate-700 bg-opacity-40 rounded-[40px] p-10 flex flex-col justify-center items-center w-full max-w-xl">
               {` Enhance your vehicle's aesthetics and privacy with our premium
             window tinting service that blocks UV rays and reduces glare.`}
@@ -34,7 +32,7 @@ const ServicesSection = () => {
               width={600}
               height={600}
               objectFit="cover"
-              className="flex w-full h-full object-cover "
+              className="flex w-full h-full object-cover opacity-70 z-0"
             />
           </div>
         </div>
@@ -47,14 +45,12 @@ const ServicesSection = () => {
               width={600}
               height={600}
               objectFit="cover"
-              className="flex w-full object-cover h-full"
+              className="flex w-full object-cover h-full opacity-70 z-0"
             />
           </div>
 
-          <div className=" text-white p-10  flex flex-col justify-center sm:items-end items-center md:pr-20 gap-10  w-full h-full absolute top-[50%] -translate-y-1/2 sm:relative">
-            <h2 className=" font-bold text-6xl pb-4 bg-black bg-opacity-40 p-2 sm:bg-transparent">
-              Paint Protection
-            </h2>
+          <div className=" text-white p-10  flex flex-col justify-center sm:items-start items-center  md:pl-20 gap-10 z-10  w-full h-full absolute top-[50%] -translate-y-1/2 sm:relative">
+            <h2 className=" font-bold text-6xl pb-4  ">Paint Protection</h2>
 
             <span className="text-xl text-center bg-slate-700 bg-opacity-40 rounded-[40px] p-10 flex flex-col justify-center items-center w-full max-w-xl">
               {`Safeguard your car's paint from scratches, dirt, and weathering with
@@ -69,10 +65,8 @@ const ServicesSection = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 relative">
-          <div className=" text-white p-10  flex flex-col justify-center sm:items-end items-center pr-20 gap-10  w-full h-full absolute top-[50%] -translate-y-1/2 sm:relative">
-            <h2 className=" font-bold text-6xl pb-4 bg-black bg-opacity-40 p-2 sm:bg-transparent">
-              Vinyl Wraps
-            </h2>
+          <div className=" text-white p-10  flex flex-col justify-center sm:items-end items-center md:pr-20 gap-10 z-10  w-full h-full absolute top-[50%] -translate-y-1/2 sm:relative">
+            <h2 className=" font-bold text-6xl pb-4  ">Vinyl Wraps</h2>
 
             <span className="text-xl text-center bg-slate-700 bg-opacity-40 rounded-[40px] p-10 flex flex-col justify-center items-center w-full max-w-xl">
               {` Customize your vehicle's appearance with our high-quality vinyl
@@ -85,14 +79,14 @@ const ServicesSection = () => {
             </Link>
           </div>
 
-          <div className=" bg-black text-black flex justify-center items-center md:h-[100vh] h-[100vh] w-full object-cover">
+          <div className=" bg-black text-black flex justify-center items-center md:h-[100vh] h-[100vh] w-full object-cover ">
             <Image
               alt="paint protectied car"
               src="/local/wrap.png"
               width={600}
               height={600}
               objectFit="cover"
-              className="flex w-full object-cover h-full"
+              className="flex w-full object-cover h-full opacity-70 z-0"
             />
           </div>
         </div>

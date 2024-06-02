@@ -8,7 +8,7 @@ import CarCompanies from "./components/CarCompanies";
 
 export default function Home() {
   return (
-    <main className=" flex flex-col  w-full">
+    <main className=" flex flex-col  w-full justify-center items-center">
       <VideoSection />
       <AboutUsSection />
       <CarCompanies />
