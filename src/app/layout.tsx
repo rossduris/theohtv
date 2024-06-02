@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "Discover top-quality window tinting and vinyl solutions at The Ohio Tint & Vinyl Company. Serving Ohio with excellence, we offer automotive, residential, and commercial tint services alongside custom vinyl graphics and wraps. Enhance your style and comfort with our professional, durable installations. Get a free quote today!",
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
