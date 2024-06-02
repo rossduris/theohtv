@@ -16,8 +16,7 @@ export default function Home() {
 
       <ServicesSection />
 
-      <ImageSlider />
-
+      <FlexGallery />
       <MapSection />
     </main>
   );
