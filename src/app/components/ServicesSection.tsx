@@ -12,7 +12,10 @@ const ServicesSection = () => {
       {/* <h3 className="text-7xl font-bold py-28">Our Services</h3> */}
 
       <div className=" relative w-full">
-        <div className="grid grid-cols-1 sm:grid-cols-2 relative">
+        <div
+          id="window-tinting"
+          className="grid grid-cols-1 sm:grid-cols-2 relative"
+        >
           <div className=" text-white p-10  flex flex-col justify-center sm:items-start z-10 items-center md:pl-36 gap-10  w-full    absolute top-[50%] -translate-y-1/2  sm:relative">
             <h2 className="font-bold text-6xl pb-4  ">Window Tinting</h2>
             <span className="text-xl text-center bg-slate-700 bg-opacity-40 rounded-[40px] p-10 flex flex-col justify-center items-center w-full max-w-xl">
@@ -28,7 +31,7 @@ const ServicesSection = () => {
           <div className=" bg-transparent text-black flex justify-center items-center md:h-[100vh] h-[100vh] ">
             <Image
               alt="window tint"
-              src="/local/tint.png"
+              src="https://theohtv.s3.amazonaws.com/tint.png"
               width={600}
               height={600}
               objectFit="cover"
@@ -37,11 +40,14 @@ const ServicesSection = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 relative">
+        <div
+          id="paint-protection"
+          className="grid grid-cols-1 sm:grid-cols-2 relative"
+        >
           <div className=" bg-black text-black flex justify-center items-center md:h-[100vh] h-[100vh]  w-full">
             <Image
               alt="paint protectied car"
-              src="/local/paint-protection.png"
+              src="https://theohtv.s3.amazonaws.com/paint-protection.png"
               width={600}
               height={600}
               objectFit="cover"
@@ -64,7 +70,10 @@ const ServicesSection = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 relative">
+        <div
+          id="vinyl-wrap"
+          className="grid grid-cols-1 sm:grid-cols-2 relative"
+        >
           <div className=" text-white p-10  flex flex-col justify-center sm:items-end items-center md:pr-20 gap-10 z-10  w-full h-full absolute top-[50%] -translate-y-1/2 sm:relative">
             <h2 className=" font-bold text-6xl pb-4  ">Vinyl Wraps</h2>
 
@@ -81,8 +90,8 @@ const ServicesSection = () => {
 
           <div className=" bg-black text-black flex justify-center items-center md:h-[100vh] h-[100vh] w-full object-cover ">
             <Image
-              alt="paint protectied car"
-              src="/local/wrap.png"
+              alt="vinyl wrap"
+              src="https://theohtv.s3.amazonaws.com/wrap.png"
               width={600}
               height={600}
               objectFit="cover"

@@ -6,7 +6,7 @@ const AboutUsSection = () => {
   return (
     <section
       id="about-us"
-      className="flex flex-col min-h-screen justify-around   relative w-full overflow-hidden md:px-20"
+      className="flex flex-col min-h-screen justify-around   relative w-full overflow-hidden "
     >
       <div className="car-bg"></div>
 
