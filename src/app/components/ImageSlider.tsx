@@ -140,8 +140,8 @@ const ImageSlider: React.FC = () => {
   }, [activeSlide]);
 
   return (
-    <div>
-      <div className=" h-screen z-50 transition-all duration-100 ">
+    <div id="mobile-gallery" className="relative flex w-full">
+      <div className=" h-screen z-10 transition-all duration-100 ">
         {images.map((image, index) => (
           <div
             key={index}

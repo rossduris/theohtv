@@ -4,7 +4,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className=" bg-black w-full border-t flex justify-between  bg-gradient-to-t from-black to-[#121212] flex-col lg:flex-row">
+    <footer className=" bg-black w-full border-t flex justify-between  bg-gradient-to-t from-black to-[#121212] flex-col lg:flex-row block">
       <Link href="/">
         <Image
           alt="logo big"

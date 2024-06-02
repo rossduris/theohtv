@@ -15,6 +15,9 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   color: white;
@@ -193,7 +196,8 @@ footer nav a:hover {
 }
 
 .car-companies div {
-  background: url("/local/car-companies.png") no-repeat;
+  background: url("https://theohtv.s3.amazonaws.com/car-companies.png")
+    no-repeat;
   width: 100px;
   height: 100px;
   background-size: 450px;
@@ -309,4 +313,81 @@ header {
 
 .feature-title {
   @apply font-bold text-4xl pb-4;
+}
+
+.flex-gallery {
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adds space between the elements */
+}
+
+.flex-gallery div {
+  flex: 1 0 21%; /* Sets a default grow, shrink, and basis */
+  overflow: hidden; /* Ensures content does not spill outside the div */
+}
+
+.flex-gallery div:nth-child(1) {
+  flex: 2 0 23%; /* Makes certain elements larger */
+}
+.flex-gallery div:nth-child(5) {
+  flex: 2 0 33%; /* Makes certain elements larger */
+}
+.flex-gallery div:nth-child(8) {
+  flex: 2 0 13%; /* Makes certain elements larger */
+}
+
+.flex-gallery div img {
+  width: 100%;
+  height: 100%; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure images cover the div completely */
+}
+
+.services-drop-down {
+  position: absolute;
+  background-color: white;
+  top: 32px;
+  border-radius: 10px;
+  padding: 10px;
+  z-index: 40;
+  color: black;
+  width: 180px;
+  animation: drop-in 0.4s forwards;
+}
+.drop-in {
+  animation: drop-in 0.4s forwards;
+}
+.services-drop-down a {
+  border-radius: 14px;
+  margin: 0 0 3px;
+}
+.services-drop-down a:hover {
+  background: rgb(230, 230, 230);
+}
+
+.service-show {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.service-hide {
+  display: none;
+}
+
+header nav a {
+  padding: 10px 0;
+}
+
+@keyframes drop-in {
+  0% {
+    transform: translateX(40px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.hide-gallery {
+  display: none;
 }

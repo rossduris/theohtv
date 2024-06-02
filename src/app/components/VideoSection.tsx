@@ -28,8 +28,8 @@ const VideoSection = () => {
         >
           {`EXPERT-LEVEL`}
           <br></br>
-          <span key={sliderIndex} ref={sliderTextRef} className="slider-text ">
-            {sliderText[sliderIndex]}
+          <span ref={sliderTextRef} className="slider-text ">
+            <Link href="/#window-tinting">{sliderText[sliderIndex]}</Link>
           </span>
         </h1>
         <div className="slider-tabs flex justify-center gap-2 mt-6 mb-14">
@@ -47,7 +47,7 @@ const VideoSection = () => {
           ></span>
         </div>
 
-        <Link href="#services">
+        <Link href="#contact-us">
           <button className="bg-black text-white font-bold border border-white py-4 px-10 rounded-md  text-2xl hover:bg-[#181818] transition-all duration-100">
             {` Get A Free Quote`}
           </button>
@@ -65,7 +65,10 @@ const VideoSection = () => {
           muted
           loop
         >
-          <source src="/local/carvideo.mp4" type="video/mp4" />
+          <source
+            src="https://theohtv.s3.amazonaws.com/carvideo.mp4"
+            type="video/mp4"
+          />
           {`Your browser does not support the video tag.`}
         </video>
       </div>
