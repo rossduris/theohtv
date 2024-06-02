@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
-const VideoSection = () => {
+const VideoSection = async () => {
   const [sliderIndex, setSliderIndex] = useState(0);
   const sliderTextRef = useRef(null);
   const intervalRef = useRef(null);
@@ -21,26 +21,28 @@ const VideoSection = () => {
   }, []);
 
   return (
-    <div className=" relative">
-      <section className="relative top-0 min-h-screen flex border-t border-black border-b w-full h-full justify-center items-center">
-        <div className=" w-full flex absolute h-screen">
-          <video
-            style={{
-              opacity: 0.4,
-            }}
-            width="100%"
-            height="100%"
-            autoPlay
-            muted
-            loop
-          >
-            <source
-              src="https://theohtv.s3.amazonaws.com/carvideo.mp4"
-              type="video/mp4"
-            />
-            {`Your browser does not support the video tag.`}
-          </video>
-        </div>
+    <>
+      <div className=" min-h-screen flex object-contain w-full ">
+        <video
+          style={{
+            objectFit: "cover",
+            opacity: 0.4,
+          }}
+          width="100%"
+          height="100%"
+          autoPlay
+          muted
+          loop
+          className=" z-0"
+        >
+          <source
+            src="https://theohtv.s3.amazonaws.com/carvideo.mp4"
+            type="video/mp4"
+          />
+          {`Your browser does not support the video tag.`}
+        </video>
+      </div>
+      <section className="absolute top-0 min-h-screen flex border-t border-black border-b w-full h-full justify-center items-center">
         <div>
           <h1
             className={`font-bold md:text-8xl max-w-[400px] mt-20 -ml-14 sm:-ml-20 w-[300px] text-6xl relative `}
@@ -73,7 +75,7 @@ const VideoSection = () => {
           </Link>
         </div>
       </section>
-    </div>
+    </>
   );
 };
 
