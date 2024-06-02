@@ -11,6 +11,7 @@ export default function Home() {
     <main className=" flex flex-col  w-full">
       <VideoSection />
       <AboutUsSection />
+      <CarCompanies />
 
       <ServicesSection />
 
