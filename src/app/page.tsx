@@ -16,12 +16,7 @@ export default function Home() {
 
       <ServicesSection />
 
-      <div className=" flex sm:flex relative w-full ">
-        <ImageSlider />
-      </div>
-      {/* <div className=" hidden sm:flex relative w-full">
-        <FlexGallery />
-      </div> */}
+      <ImageSlider />
 
       <MapSection />
     </main>

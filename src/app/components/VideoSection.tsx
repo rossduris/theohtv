@@ -53,7 +53,7 @@ const VideoSection = () => {
           </button>
         </Link>
       </div>
-      <div className=" min-h-screen flex select-none z-30">
+      <div className=" min-h-screen flex object-contain w-full absolute -z-10">
         <video
           style={{
             objectFit: "cover",
