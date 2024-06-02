@@ -108,7 +108,7 @@ const FlexGallery = () => {
 
   return (
     <div id="gallery" className="flex-gallery">
-      {images
+      {/* {images
         .filter((img, i) => i < 15)
         .map((image, i) => {
           return (
@@ -116,7 +116,7 @@ const FlexGallery = () => {
               <Image src={image.src} alt="car" width={300} height={200} />
             </div>
           );
-        })}
+        })} */}
     </div>
   );
 };
