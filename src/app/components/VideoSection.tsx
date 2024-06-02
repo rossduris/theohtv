@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
-const VideoSection = async () => {
+const VideoSection = () => {
   const [sliderIndex, setSliderIndex] = useState(0);
   const sliderTextRef = useRef(null);
   const intervalRef = useRef(null);
@@ -12,13 +12,13 @@ const VideoSection = async () => {
     "PAINT PROTECTION",
     "VINYL WRAPPING",
   ]);
-  // useEffect(() => {
-  //   const intervalId = setInterval(() => {
-  //     setSliderIndex((prevIndex) => (prevIndex + 1) % 3);
-  //   }, 4000);
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setSliderIndex((prevIndex) => (prevIndex + 1) % 3);
+    }, 4000);
 
-  //   return () => clearInterval(intervalId); // Clean up the interval on component unmount
-  // }, []);
+    return () => clearInterval(intervalId); // Clean up the interval on component unmount
+  }, []);
 
   return (
     <>
