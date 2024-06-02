@@ -23,7 +23,7 @@ const VideoSection = () => {
   return (
     <>
       <div className=" min-h-screen flex object-contain w-full select-none">
-        <div className=" absolute flex w-full   bg-transparent top-0 h-screen z-40">
+        <div className=" absolute flex w-full   bg-transparent top-0 h-screen z-0">
           <video
             style={{
               objectFit: "cover",
