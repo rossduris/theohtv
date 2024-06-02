@@ -5,7 +5,7 @@ const CarCompanies = () => {
   const [position, setPosition] = useState(0);
 
   return (
-    <section className="relative overflow-hidden my-20">
+    <section className="relative overflow-hidden my-20 bg-black">
       <div
         className="car-companies"
         style={{
