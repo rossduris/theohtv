@@ -36,7 +36,7 @@ const MobileNav = () => {
             <span onClick={() => setIsOpen(false)}>Services</span>
           </Link>
 
-          <Link href="/#mobile-gallery">
+          <Link href="/#gallery">
             <span onClick={() => setIsOpen(false)}> Gallery</span>
           </Link>
           <Link href="/#contact-us">

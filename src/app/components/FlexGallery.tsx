@@ -107,7 +107,7 @@ const FlexGallery = () => {
   ];
 
   return (
-    <div id="photos" className="flex-gallery">
+    <div id="gallery" className="flex-gallery">
       {images
         .filter((img, i) => i < 15)
         .map((image, i) => {

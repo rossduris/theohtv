@@ -21,39 +21,8 @@ const VideoSection = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center border-t border-black border-b w-full h-full">
-      <div className="absolute flex justify-center items-center text-white top-0 w-full h-full z-10 flex-col">
-        <h1
-          className={`font-bold md:text-8xl max-w-[400px] mt-20 -ml-14 sm:-ml-20 w-[300px] text-6xl relative `}
-        >
-          {`EXPERT-LEVEL`}
-          <br></br>
-          <span ref={sliderTextRef} className="slider-text ">
-            <Link href="/#window-tinting">{sliderText[sliderIndex]}</Link>
-          </span>
-        </h1>
-        <div className="slider-tabs flex justify-center gap-2 mt-6 mb-14">
-          <span
-            onClick={() => setSliderIndex(0)}
-            className={sliderIndex === 0 ? `active-tab` : ""}
-          ></span>
-          <span
-            onClick={() => setSliderIndex(1)}
-            className={sliderIndex === 1 ? `active-tab` : ""}
-          ></span>
-          <span
-            onClick={() => setSliderIndex(2)}
-            className={sliderIndex === 2 ? `active-tab` : ""}
-          ></span>
-        </div>
-
-        <Link href="#contact-us">
-          <button className="bg-black text-white font-bold border border-white py-4 px-10 rounded-md  text-2xl hover:bg-[#181818] transition-all duration-100">
-            {` Get A Free Quote`}
-          </button>
-        </Link>
-      </div>
-      <div className=" min-h-screen flex object-contain w-full absolute top-0 -z-10">
+    <>
+      <div className=" min-h-screen flex object-contain w-full ">
         <video
           style={{
             objectFit: "cover",
@@ -64,6 +33,7 @@ const VideoSection = () => {
           autoPlay
           muted
           loop
+          className=" z-0"
         >
           <source
             src="https://theohtv.s3.amazonaws.com/carvideo.mp4"
@@ -72,7 +42,40 @@ const VideoSection = () => {
           {`Your browser does not support the video tag.`}
         </video>
       </div>
-    </section>
+      <section className="absolute top-0 min-h-screen flex border-t border-black border-b w-full h-full justify-center items-center">
+        <div>
+          <h1
+            className={`font-bold md:text-8xl max-w-[400px] mt-20 -ml-14 sm:-ml-20 w-[300px] text-6xl relative `}
+          >
+            {`EXPERT-LEVEL`}
+            <br></br>
+            <span ref={sliderTextRef} className="slider-text ">
+              <Link href="/#window-tinting">{sliderText[sliderIndex]}</Link>
+            </span>
+          </h1>
+          <div className="slider-tabs flex justify-center gap-2 mt-6 mb-14">
+            <span
+              onClick={() => setSliderIndex(0)}
+              className={sliderIndex === 0 ? `active-tab` : ""}
+            ></span>
+            <span
+              onClick={() => setSliderIndex(1)}
+              className={sliderIndex === 1 ? `active-tab` : ""}
+            ></span>
+            <span
+              onClick={() => setSliderIndex(2)}
+              className={sliderIndex === 2 ? `active-tab` : ""}
+            ></span>
+          </div>
+
+          <Link href="#contact-us">
+            <button className="bg-black text-white font-bold border border-white py-4 px-10 rounded-md  text-2xl hover:bg-[#181818] transition-all duration-100">
+              {` Get A Free Quote`}
+            </button>
+          </Link>
+        </div>
+      </section>
+    </>
   );
 };
 
