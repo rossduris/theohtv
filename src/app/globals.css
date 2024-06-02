@@ -306,3 +306,7 @@ header {
 .slider-tabs .active-tab {
   background: rgb(255, 255, 255);
 }
+
+.feature-title {
+  @apply font-bold text-4xl pb-4;
+}

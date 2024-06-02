@@ -4,16 +4,8 @@ import React, { useEffect, useState } from "react";
 const CarCompanies = () => {
   const [position, setPosition] = useState(0);
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setPosition((prevPosition) => prevPosition + 10);
-  //   }, 500);
-
-  //   return () => clearInterval(interval);
-  // }, []);
-
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden my-20">
       <div
         className="car-companies"
         style={{

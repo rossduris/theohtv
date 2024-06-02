@@ -44,8 +44,6 @@ const AboutUsSection = () => {
           </ul>
         </div>
       </div>
-
-      <CarCompanies />
     </section>
   );
 };
