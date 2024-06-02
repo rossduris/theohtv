@@ -24,7 +24,7 @@ const VideoSection = () => {
     <section className="relative min-h-screen flex items-center border-t border-black border-b w-full h-full">
       <div className="absolute flex justify-center items-center text-white top-0 w-full h-full z-10 flex-col">
         <h1
-          className={`font-bold md:text-8xl max-w-[400px] mt-20 w-[300px] text-6xl relative `}
+          className={`font-bold md:text-8xl max-w-[400px] mt-20 -ml-14 sm:-ml-20 w-[300px] text-6xl relative `}
         >
           {`EXPERT-LEVEL`}
           <br></br>
