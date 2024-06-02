@@ -9,7 +9,7 @@ const ServicesSection = () => {
       id="services"
       className=" bg-gradient-to-bl from-black to-[#121212] flex flex-col justify-center items-center"
     >
-      <h3 className="text-7xl font-bold py-28">Our Services</h3>
+      {/* <h3 className="text-7xl font-bold py-28">Our Services</h3> */}
 
       <div className=" relative w-full">
         <div className="grid grid-cols-1 sm:grid-cols-2 relative">

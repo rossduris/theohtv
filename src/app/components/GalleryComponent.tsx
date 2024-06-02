@@ -55,20 +55,26 @@ const GalleryComponent = ({ images }: { images: ImagekitImage[] }) => {
   };
 
   return (
-    <div className="flex flex-wrap gap-4 w-full justify-center p-6 select-none items-center ">
-      <h2 className=" racer title">Gallery</h2>
-
-      {images.map((image, index) => {
-        return (
-          <div
-            key={image.versionInfo.id}
-            className="galleryImageWrapper "
-            onClick={() => handleImageClick(image, index)}
-          >
-            <Image src={image.url} alt={image.type} width={380} height={300} />
-          </div>
-        );
-      })}
+    <div className="flex flex-wrap w-full justify-center select-none items-center ">
+      {images
+        .filter((img, index) => index > 0 && index < 11)
+        .map((image, index) => {
+          return (
+            <div
+              key={image.versionInfo.id}
+              className="galleryImageWrapper flex-grow max-h-64"
+              onClick={() => handleImageClick(image, index)}
+            >
+              <Image
+                src={image.url}
+                alt={image.type}
+                width={480}
+                height={300}
+                className=" w-full flex"
+              />
+            </div>
+          );
+        })}
 
       {modalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center p-4 z-50 ">
