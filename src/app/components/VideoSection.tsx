@@ -22,6 +22,25 @@ const VideoSection = () => {
 
   return (
     <section className="relative min-h-screen flex items-center border-t border-black border-b w-full h-full">
+      <div className=" min-h-screen flex object-contain w-full">
+        <video
+          style={{
+            objectFit: "cover",
+            opacity: 0.4,
+          }}
+          width="100%"
+          height="100%"
+          autoPlay
+          muted
+          loop
+        >
+          <source
+            src="https://theohtv.s3.amazonaws.com/carvideo.mp4"
+            type="video/mp4"
+          />
+          {`Your browser does not support the video tag.`}
+        </video>
+      </div>
       <div className="absolute flex justify-center items-center text-white top-0 w-full h-full z-10 flex-col">
         <h1
           className={`font-bold md:text-8xl max-w-[400px] mt-20 -ml-14 sm:-ml-20 w-[300px] text-6xl relative `}
@@ -52,25 +71,6 @@ const VideoSection = () => {
             {` Get A Free Quote`}
           </button>
         </Link>
-      </div>
-      <div className=" min-h-screen flex object-contain w-full">
-        <video
-          style={{
-            objectFit: "cover",
-            opacity: 0.4,
-          }}
-          width="100%"
-          height="100%"
-          autoPlay
-          muted
-          loop
-        >
-          <source
-            src="https://theohtv.s3.amazonaws.com/carvideo.mp4"
-            type="video/mp4"
-          />
-          {`Your browser does not support the video tag.`}
-        </video>
       </div>
     </section>
   );
