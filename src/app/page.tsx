@@ -16,12 +16,12 @@ export default function Home() {
 
       <ServicesSection />
 
-      <div className=" flex sm:flex relative w-full ">
+      {/* <div className=" flex sm:flex relative w-full ">
         <ImageSlider />
-      </div>
-      <div className=" hidden sm:flex relative w-full">
-        <FlexGallery />
-      </div>
+      </div> */}
+      {/* <div className=" hidden sm:flex relative w-full"> */}
+      <FlexGallery />
+      {/* </div> */}
 
       <MapSection />
     </main>
