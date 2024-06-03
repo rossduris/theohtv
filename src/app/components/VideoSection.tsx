@@ -37,7 +37,7 @@ const VideoSection = () => {
             className=" z-0"
           >
             <source
-              src="https://f005.backblazeb2.com/file/theohtv/carvideo.mp4"
+              src="https://theohtv.s3.amazonaws.com/carvideo.mp4"
               type="video/mp4"
             />
             {`Your browser does not support the video tag.`}
