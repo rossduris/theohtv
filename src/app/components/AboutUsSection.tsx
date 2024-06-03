@@ -41,8 +41,8 @@ const AboutUsSection = () => {
             </li>
           </ul>
         </div>
+        <div className="car-bg"></div>
       </div>
-      <div className="car-bg z-0"></div>
     </section>
   );
 };
