@@ -185,9 +185,10 @@ footer nav a:hover {
   display: flex;
   width: 100%;
   background: linear-gradient(from top, #000, #2f2f2f);
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 0 0 20px;
   transition: all 0.5s ease;
+  gap: 10px;
 }
 
 .car-companies div {

@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import Link from "next/link";
+import React, { useEffect, useState } from "react";
 
 const FlexGallery = () => {
   type ImageData = {
@@ -106,17 +108,44 @@ const FlexGallery = () => {
     },
   ];
 
+  const [displayImages, setDisplayImages] = useState(images.slice(5, 12));
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setDisplayImages((prevDisplayImages) => {
+        const newImages = [...prevDisplayImages];
+        const randomIndex = Math.floor(Math.random() * newImages.length);
+        const newRandomIndex = Math.floor(Math.random() * images.length);
+
+        // Ensure the new random index is within the valid range and not the same as the current index
+        if (
+          newRandomIndex !== randomIndex &&
+          newRandomIndex > 4 &&
+          newRandomIndex < 12
+        ) {
+          newImages[randomIndex] = images[newRandomIndex];
+        }
+
+        return newImages;
+      });
+    }, 4000); // Change image every 5 seconds
+
+    return () => clearInterval(intervalId);
+  }, [images]);
+
   return (
-    <div id="gallery" className="flex-gallery">
-      {images
-        .filter((img, i) => i < 15)
-        .map((image, i) => {
-          return (
-            <div key={i}>
-              <Image src={image.src} alt="car" width={300} height={200} />
-            </div>
-          );
-        })}
+    <div id="gallery" className="flex-gallery relative">
+      <Link
+        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-black p-10 rounded-full opacity-95 hover:opacity-90"
+        href="/gallery"
+      >
+        View The Gallery
+      </Link>
+      {displayImages.map((image, i) => (
+        <div key={i}>
+          <Image src={image.src} alt={image.alt} width={300} height={200} />
+        </div>
+      ))}
     </div>
   );
 };

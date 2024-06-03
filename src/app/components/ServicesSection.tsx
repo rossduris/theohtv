@@ -22,7 +22,7 @@ const ServicesSection = () => {
               {` Enhance your vehicle's aesthetics and privacy with our premium
             window tinting service that blocks UV rays and reduces glare.`}
             </span>
-            <Link href="#contact-us">
+            <Link href="/get-quote">
               <button className="bg-black text-white font-bold border border-white py-4 px-10 rounded-md  text-2xl hover:bg-[#181818] transition-all duration-100">
                 {` Get A Free Quote`}
               </button>
@@ -62,7 +62,7 @@ const ServicesSection = () => {
               {`Safeguard your car's paint from scratches, dirt, and weathering with
             our durable paint protection solutions.`}
             </span>
-            <Link href="#contact-us">
+            <Link href="/get-quote">
               <button className="bg-black text-white font-bold border border-white py-4 px-10 rounded-md  text-2xl hover:bg-[#181818] transition-all duration-100">
                 {` Get A Free Quote`}
               </button>
@@ -81,7 +81,7 @@ const ServicesSection = () => {
               {` Customize your vehicle's appearance with our high-quality vinyl
             wraps, available in a variety of colors and finishes.`}
             </span>
-            <Link href="#contact-us">
+            <Link href="/get-quote">
               <button className="bg-black text-white font-bold border border-white py-4 px-10 rounded-md  text-2xl hover:bg-[#181818] transition-all duration-100">
                 {` Get A Free Quote`}
               </button>

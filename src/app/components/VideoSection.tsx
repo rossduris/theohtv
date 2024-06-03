@@ -52,7 +52,7 @@ const VideoSection = () => {
               {`EXPERT-LEVEL`}
               <br></br>
               <span ref={sliderTextRef} className="slider-text ">
-                <Link href="/#window-tinting">{sliderText[sliderIndex]}</Link>
+                {sliderText[sliderIndex]}
               </span>
             </h1>
             <div className="slider-tabs flex justify-center gap-2 mt-6 mb-14">
@@ -70,7 +70,7 @@ const VideoSection = () => {
               ></span>
             </div>
 
-            <Link href="#contact-us">
+            <Link href="/get-quote">
               <button className="bg-black text-white font-bold border border-white py-4 px-10 rounded-md  text-2xl hover:bg-[#181818] transition-all duration-100">
                 {` Get A Free Quote`}
               </button>
