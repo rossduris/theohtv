@@ -37,7 +37,10 @@ const VideoSection = () => {
             playsInline
             className=" z-0"
           >
-            <source src={process.env.HOME_VIDEO_URL} type="video/mp4" />
+            <source
+              src="https://theohtv.s3.amazonaws.com/car-low-res.mp4"
+              type="video/mp4"
+            />
             {`Your browser does not support the video tag.`}
           </video>
         </div>
