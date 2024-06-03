@@ -1,17 +1,11 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
-// import ReactPlayer from "react-player";
-import dynamic from "next/dynamic";
-const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 const VideoSection = () => {
   const [sliderIndex, setSliderIndex] = useState(0);
   const sliderTextRef = useRef(null);
   const intervalRef = useRef(null);
-  const [video, setVideo] = useState("");
-  const [playing, setPlaying] = useState(false);
-
   const [textHeight, setTextHeight] = useState(300);
   const [sliderText, setSliderText] = useState([
     "WINDOW TINTING",
@@ -29,26 +23,26 @@ const VideoSection = () => {
   return (
     <>
       <div className=" min-h-screen flex object-contain w-full select-none relative">
-        <div className=" flex w-full h-full object-cover">
-          <div className="min-h-screen flex items-center justify-center w-full select-none relative bg-black overflow-hidden">
-            <ReactPlayer
-              url="https://theohtv.s3.amazonaws.com/carvideo.mp4"
-              playing={true}
-              loop
-              muted
-              width="200%"
-              height="100%"
-              playsinline
-              style={{
-                position: "absolute",
-                top: 0,
-                left: "-50%",
-                translate: "0 0",
-                opacity: 0.5,
-              }}
-              controls={false}
+        <div className="  relative flex w-full   bg-transparent top-0 h-screen z-0">
+          <video
+            style={{
+              objectFit: "cover",
+              opacity: 0.4,
+            }}
+            width="100%"
+            height="100%"
+            autoPlay
+            muted
+            loop
+            playsInline
+            className=" z-0"
+          >
+            <source
+              src="https://theohtv.s3.amazonaws.com/carvideo.mp4"
+              type="video/mp4"
             />
-          </div>
+            {`Your browser does not support the video tag.`}
+          </video>
         </div>
         <section className="absolute top-0 min-h-screen flex border-t border-black border-b w-full h-full justify-center items-center">
           <div>
