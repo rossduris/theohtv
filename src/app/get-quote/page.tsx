@@ -7,6 +7,7 @@ const GetQuote = () => {
   return (
     <div className="page-details">
       <h1 className=" text-7xl font-bold mt-20">Get a Free Quote</h1>
+
       <ContactForm />
     </div>
   );
