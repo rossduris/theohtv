@@ -142,7 +142,7 @@ const FlexGallery = () => {
         View The Gallery
       </Link>
       {images
-        .filter((img, i) => i > 4 && i < 14)
+        .filter((img, i) => i > 4 && i < 13)
         .map((image, i) => (
           <div key={i}>
             <Image src={image.src} alt={image.alt} width={300} height={200} />
