@@ -26,8 +26,10 @@ const AboutUsSection = () => {
           </span>
         </div>
         <Reviews />
+
         <div className="car-bg"></div>
       </div>
+      <CarCompanies />
     </section>
   );
 };

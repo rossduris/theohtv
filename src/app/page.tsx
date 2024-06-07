@@ -10,7 +10,6 @@ export default function Home() {
     <main className=" flex flex-col  w-full justify-center items-center">
       <VideoSection />
       <AboutUsSection />
-      {/* <CarCompanies /> */}
 
       <ServicesSection />
 

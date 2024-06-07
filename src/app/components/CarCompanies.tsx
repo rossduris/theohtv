@@ -1,18 +1,27 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef } from "react";
 
 const CarCompanies = () => {
-  const [position, setPosition] = useState(0);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   return (
-    <section className="relative overflow-hidden my-20 bg-black">
-      <div
-        className="car-companies"
-        style={{
-          position: "relative",
-          left: `${position}px`,
-        }}
-      >
+    <section className="relative my-20 bg-black overflow-hidden">
+      <div ref={containerRef} className="car-companies">
+        <div className="merc"></div>
+        <div className="audi"></div>
+        <div className="lambo"></div>
+        <div className="bently"></div>
+        <div className="ford"></div>
+        <div className="tesla"></div>
+        <div className="lexus"></div>
+        <div className="subaru"></div>
+        <div className="dodge"></div>
+        {/* double */}
+        <div className="merc"></div>
+        <div className="audi"></div>
+        <div className="lambo"></div>
+        <div className="bently"></div>
+        <div className="ford"></div>
         <div className="tesla"></div>
         <div className="lexus"></div>
         <div className="subaru"></div>
