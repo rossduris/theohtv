@@ -7,10 +7,10 @@ const AboutUsSection = () => {
   return (
     <section
       id="about-us"
-      className="flex flex-col min-h-screen justify-around   relative w-full overflow-hidden bg-black"
+      className="flex flex-col min-h-screen justify-around items-center   relative w-full overflow-hidden bg-black"
     >
-      <div className=" grid md:grid-cols-2 grid-cols-1 sm:p-20 p-8 z-10">
-        <div className="  bg-black  bg-opacity-75  bottom-0 pb-10 w-full">
+      <div className=" grid md:grid-cols-2 grid-cols-1  z-10 max-w-7xl">
+        <div className="  bg-black  bg-opacity-75  bottom-0 p-10 w-full">
           <h1 className="sm:text-7xl text-5xl font-bold  sm:mt-20 mt-20 sm:p-10 p-4 text-center sm:text-left">
             About us
           </h1>

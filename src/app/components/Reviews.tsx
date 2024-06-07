@@ -49,10 +49,10 @@ const Reviews = () => {
   }, [reviews.length]);
 
   return (
-    <div className="bg-black bg-opacity-40 rounded-[40px] p-10 flex flex-col justify-center items-start w-full">
+    <div className="bg-black bg-opacity-40 rounded-[40px] p-10 flex flex-col justify-center items-start w-full mb-20">
       <span className="text-6xl font-bold mb-6 mt-6">{`Ranked #1`}</span>
       <ul className="reviews">
-        <li key={sliderIndex} className="relative h-20">
+        <li key={sliderIndex} className="relative  h-[120px]">
           <Link href={reviews[sliderIndex].link} passHref target="_blank">
             <div className="font-serif text-5xl absolute -left-6 opacity-40 top-9">
               {`"`}
