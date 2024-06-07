@@ -1,6 +1,7 @@
 import React from "react";
 import CarCompanies from "./CarCompanies";
 import Link from "next/link";
+import Reviews from "./Reviews";
 
 const AboutUsSection = () => {
   return (
@@ -24,23 +25,7 @@ const AboutUsSection = () => {
             {`10+ Years Experience`}
           </span>
         </div>
-        <div className=" bg-black bg-opacity-40 rounded-[40px] p-10 flex flex-col justify-center items-start w-full">
-          <span className="text-6xl font-bold mb-6 mt-6 sm:">{`Rated Top 1%`}</span>
-          <ul className="reviews">
-            <li className=" relative">
-              <Link href="https://g.co/kgs/ERsKZsB" passHref target="_blank">
-                <div className="font-serif text-5xl absolute -left-6 opacity-40 top-9">
-                  {`"`}
-                </div>
-                <span className="  py-2 pt-10">{`David Krupovlyanskaya`}</span>
-                <blockquote className=" py-4  rounded-lg italic">
-                  {`One of the best shops in Ohio for sure, had him work on many
-                  of my cars( nsx, gtr ,evo). Checking them out is a must!`}
-                </blockquote>
-              </Link>
-            </li>
-          </ul>
-        </div>
+        <Reviews />
         <div className="car-bg"></div>
       </div>
     </section>

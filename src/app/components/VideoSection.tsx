@@ -5,8 +5,6 @@ import React, { useEffect, useRef, useState } from "react";
 const VideoSection = () => {
   const [sliderIndex, setSliderIndex] = useState(0);
   const sliderTextRef = useRef(null);
-  const intervalRef = useRef(null);
-  const [textHeight, setTextHeight] = useState(300);
   const [sliderText, setSliderText] = useState([
     "WINDOW TINTING",
     "PAINT PROTECTION",
