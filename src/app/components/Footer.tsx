@@ -26,9 +26,9 @@ const Footer = () => {
           </span>
           <nav className=" text-white flex flex-col">
             <Link href="/">Home</Link>
-            <Link href="/services">Services</Link>
-            <Link href="/about-us">About Us</Link>
-            <Link href="/contact-us">Contact Us</Link>
+            <Link href="/#services">Services</Link>
+            <Link href="/#about-us">About Us</Link>
+            <Link href="/#contact-us">Contact Us</Link>
             <Link href="/gallery">Gallery</Link>
           </nav>
         </div>
