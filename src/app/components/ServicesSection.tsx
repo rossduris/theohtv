@@ -95,7 +95,7 @@ const ServicesSection = () => {
               width={600}
               height={600}
               objectFit="cover"
-              className="flex w-full object-cover h-full opacity-70 z-0"
+              className="flex w-full object-cover h-full opacity-90 z-0"
             />
           </div>
         </div>

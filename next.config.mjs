@@ -1,7 +1,23 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["imagekit.io", "ik.imagekit.io", "theohtv.s3.amazonaws.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "imagekit.io",
+        pathname: "**",
+      },
+      {
+        protocol: "https",
+        hostname: "ik.imagekit.io",
+        pathname: "**",
+      },
+      {
+        protocol: "https",
+        hostname: "theohtv.s3.amazonaws.com",
+        pathname: "**",
+      },
+    ],
   },
 };
 
