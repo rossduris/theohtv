@@ -5,7 +5,7 @@ const CarCompanies = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   return (
-    <section className="relative my-20 bg-black overflow-hidden">
+    <section className="relative mb-10 bg-black overflow-hidden">
       <div ref={containerRef} className="car-companies">
         <div className="merc"></div>
         <div className="audi"></div>
