@@ -184,8 +184,8 @@ footer nav a:hover {
   padding: 0 0 20px;
   gap: 100px;
   white-space: nowrap;
-  z-index: 20;
-  animation: scroll 50s linear infinite;
+  z-index: 1000;
+  animation: scroll 40s linear infinite;
   width: 100%;
   overflow: hidden;
 }
@@ -197,7 +197,7 @@ footer nav a:hover {
   background-size: 1400px;
   height: 100px;
   background-color: transparent;
-  z-index: 20;
+  z-index: 10000;
 }
 
 @keyframes scroll {
@@ -409,4 +409,21 @@ header nav a {
 
 .hide-gallery {
   display: none;
+}
+
+.left-fade-bg,
+.right-fade-bg {
+  position: absolute;
+  width: 240px;
+  left: 0;
+  background: green;
+  height: 100px;
+  z-index: 100000;
+  display: block;
+}
+
+.left-fade-bg {
+}
+
+.right-fade-bg {
 }
