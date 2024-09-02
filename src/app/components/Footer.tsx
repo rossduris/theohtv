@@ -62,7 +62,7 @@ const Footer = () => {
               <Link href="tel:(614) 496-7840">(614) 496-7840</Link>
             </p>
             <p>
-              2257 W. Fair Ave. <br></br> Lancaster, OH 43130
+              3818 Columbus-Lancaster Rd NW <br></br> Carroll, OH 43112
             </p>
           </nav>
         </div>

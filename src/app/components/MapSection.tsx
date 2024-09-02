@@ -12,12 +12,11 @@ const MapSection = () => {
         <div className="flex justify-center items-center w-full flex-col gap-10 py-10">
           <h3 className="text-6xl font-bold my-10">Contact Us</h3>
           <Link href="tel:(614) 496-7840">
-            {" "}
             <h3 className="text-4xl font-bold">(614) 496-7840</h3>
           </Link>
           <span className=" text-2xl hover:text-blue-200">
             <Link href="https://maps.app.goo.gl/C12WF5hPzGUBhMXb9" passHref>
-              2257 W. Fair Ave. <br></br>Lancaster, OH 43130
+              3818 Columbus-Lancaster Rd NW <br></br> Carroll, OH 43112
             </Link>
           </span>
 

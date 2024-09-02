@@ -15,7 +15,7 @@ const AboutUsSection = () => {
             About us
           </h1>
           <p className=" font-light text-lg p-10">
-            {`Welcome to The Ohio Tint & Vinyl Company, your go-to destination for premium vinyl tinting and coating services. Located in the heart of Lancaster, Ohio, we are committed to delivering unmatched quality and expert craftsmanship in every project we undertake. Our team of professionals merges cutting-edge technology with personalized service to cater to your unique requirements, guaranteeing impeccable results with every finish.`}
+            {`Welcome to The Ohio Tint & Vinyl Company, your go-to destination for premium vinyl tinting and coating services. We are committed to delivering unmatched quality and expert craftsmanship in every project we undertake. Our team of professionals merges cutting-edge technology with personalized service to cater to your unique requirements, guaranteeing impeccable results with every finish.`}
           </p>
         </div>
         <div></div>
